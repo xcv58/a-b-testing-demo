@@ -10,7 +10,7 @@ class ClientComponent extends React.Component {
   participate({id, experiment}) {
     const session = new sixpack.Session({
       client_id: id,
-      base_url: 'http://localhost:5000'
+      base_url: 'http://do.xcv58.com:5000'
     });
     session.participate(experiment, ['red', 'blue', 'green'], (err, res) => {
       if (err) throw err;
